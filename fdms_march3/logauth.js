@@ -23,6 +23,7 @@ mongoose.connection.once('open', () => {
 const app = express();
 app.use(cors({
     origin: [
+        'https://tathya-theta.vercel.app',
         'https://fdms-kmit.vercel.app', // Your Vercel URL
         'http://localhost:4009'        // Local development
     ],
